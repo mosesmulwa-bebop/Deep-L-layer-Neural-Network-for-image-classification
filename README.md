@@ -44,3 +44,19 @@ You'll store  𝑛[𝑙] , the number of units in different layers, in a variabl
 
 #### Linear Activation Forward
 Both ReLu and Sigmoid
+![relu](relu.png)
+![sigmoid](sigmoid.png)
+
+### L-model Forward
+
+Run ReLu L-1 times and then Sigmoid on the L layer
+
+### 5. Cost Function
+![cost function](cost_function.png)
+
+### 6. Backward Propagation
+Now, similarly to forward propagation,it is built in three steps
+
+a.LINEAR backward  </br>
+b.LINEAR -> ACTIVATION backward where ACTIVATION computes the derivative of either the ReLU or sigmoid activation </br>
+c.[LINEAR -> RELU]  ×  (L-1) -> LINEAR -> SIGMOID backward (whole model) </br>
