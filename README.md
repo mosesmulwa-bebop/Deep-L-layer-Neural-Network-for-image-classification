@@ -14,19 +14,19 @@ To build your neural network, several "helper functions have been implemented ."
 
  Here's an outline of the steps in this assignment:
 
-1.Initialize the parameters for an  𝐿 -layer neural network **Enter**
-2.Implement the forward propagation module 
-3.Complete the LINEAR part of a layer's forward propagation step (resulting in  𝑍[𝑙] ).
-4.The ACTIVATION function is provided for you (relu/sigmoid)
-5.Combine the previous two steps into a new [LINEAR->ACTIVATION] forward function.
-6.Stack the [LINEAR->RELU] forward function L-1 time (for layers 1 through L-1) and add a [LINEAR->SIGMOID] at the end (for the final layer  𝐿 ). This gives you a new L_model_forward function.
-7.Compute the loss
-8.Implement the backward propagation module (denoted in red in the figure below)
-9.Complete the LINEAR part of a layer's backward propagation step
-10.The gradient of the ACTIVATE function is provided for you(relu_backward/sigmoid_backward)
-11.Combine the previous two steps into a new [LINEAR->ACTIVATION] backward function
-12.Stack [LINEAR->RELU] backward L-1 times and add [LINEAR->SIGMOID] backward in a new L_model_backward function
-13.Finally, update the parameters
+1.Initialize the parameters for an  𝐿 -layer neural network</br>
+2.Implement the forward propagation module </br>
+3.Complete the LINEAR part of a layer's forward propagation step (resulting in  𝑍[𝑙] ).</br>
+4.The ACTIVATION function is provided for you (relu/sigmoid)</br>
+5.Combine the previous two steps into a new [LINEAR->ACTIVATION] forward function.</br>
+6.Stack the [LINEAR->RELU] forward function L-1 time (for layers 1 through L-1) and add a [LINEAR->SIGMOID]</br>at the end (for the final layer  𝐿 ). This gives you a new L_model_forward function.</br>
+7.Compute the loss</br>
+8.Implement the backward propagation module (denoted in red in the figure below)</br>
+9.Complete the LINEAR part of a layer's backward propagation step</br>
+10.The gradient of the ACTIVATE function is provided for you(relu_backward/sigmoid_backward)</br>
+11.Combine the previous two steps into a new [LINEAR->ACTIVATION] backward function</br>
+12.Stack [LINEAR->RELU] backward L-1 times and add [LINEAR->SIGMOID] backward in a new L_model_backward function</br>
+13.Finally, update the parameters</br>
 
 ### 3. Intialize parameters
 
