@@ -14,7 +14,7 @@ To build your neural network, several "helper functions have been implemented ."
 
  Here's an outline of the steps in this assignment:
 
-1.Initialize the parameters for an  𝐿 -layer neural network
+1.Initialize the parameters for an  𝐿 -layer neural network **Enter**
 2.Implement the forward propagation module 
 3.Complete the LINEAR part of a layer's forward propagation step (resulting in  𝑍[𝑙] ).
 4.The ACTIVATION function is provided for you (relu/sigmoid)
@@ -38,3 +38,5 @@ You'll store  𝑛[𝑙] , the number of units in different layers, in a variabl
 #### Linear Forward
 ![](linear_forward.png)
 ![linear_forward](https://user-images.githubusercontent.com/54888024/137615043-9cd01915-f683-4363-851c-abcbbd7cfc4f.PNG)
+
+#### Linear Activation Forward
