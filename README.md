@@ -37,3 +37,4 @@ You'll store  𝑛[𝑙] , the number of units in different layers, in a variabl
 ### 4. Forward Propagation
 #### Linear Forward
 ![](linear_forward.png)
+![linear_forward](https://user-images.githubusercontent.com/54888024/137615043-9cd01915-f683-4363-851c-abcbbd7cfc4f.PNG)
