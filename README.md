@@ -3,13 +3,13 @@
 This is an implementation of a  deep L-layer Neural Network. Here ,it is applied to detect images of cats. However, it's application in the real world range from computer vision, speech recognition, natural language processing, machine translation ,and bioinformatics.
 
 ## Pipeline
-###1. Import Packages
+### 1. Import Packages
 First, import all the packages you'll need .
 numpy is the main package for scientific computing with Python.
 matplotlib is a library to plot graphs in Python.
 np.random.seed(1) is used to keep all the random function calls consistent.
 
-###2. Outline 
+### 2. Outline 
 To build your neural network, several "helper functions have been implemented ." These helper functions will be used to build an L-layer neural network.
 
  Here's an outline of the steps in this assignment:
@@ -28,12 +28,12 @@ To build your neural network, several "helper functions have been implemented ."
 12.Stack [LINEAR->RELU] backward L-1 times and add [LINEAR->SIGMOID] backward in a new L_model_backward function
 13.Finally, update the parameters
 
-###3. Intialize parameters
+### 3. Intialize parameters
 
 Use random initialization for the weight matrices. Use np.random.randn(shape) * 0.01.
 Use zeros initialization for the biases. Use np.zeros(shape).
 You'll store  𝑛[𝑙] , the number of units in different layers, in a variable layer_dims
 
-###4. Forward Propagation
-####Linear Forward
+### 4. Forward Propagation
+#### Linear Forward
 ![](linear_forward.png)
