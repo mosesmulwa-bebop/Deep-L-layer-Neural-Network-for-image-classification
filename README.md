@@ -47,7 +47,7 @@ Both ReLu and Sigmoid </br>
 ![relu](relu.PNG) </br>
 ![sigmoid](sigmoid.PNG) </br>
 
-### L-model Forward
+#### L-model Forward
 
 Run ReLu L-1 times and then Sigmoid on the L layer
 
@@ -60,3 +60,21 @@ Now, similarly to forward propagation,it is built in three steps
 a.LINEAR backward  </br>
 b.LINEAR -> ACTIVATION backward where ACTIVATION computes the derivative of either the ReLU or sigmoid activation </br>
 c.[LINEAR -> RELU]  ×  (L-1) -> LINEAR -> SIGMOID backward (whole model) </br>
+#### Linear Backward
+![linear backward](linear_backward.PNG)
+#### Linear Activation Backward
+![linear activation backward](linear_activation_backward.PNG)
+
+#### L-model Backward
+When we implemented the L_model_forward function, at each iteration, we stored a cache which contains (X,W,b, and z). In the back propagation module, we'll use those variables to compute the gradients. Therefore, in the L_model_backward function, we'll iterate through all the hidden layers backward, starting from layer  𝐿 . On each step, we will use the cached values for layer  𝑙  to backpropagate through layer  𝑙 .</br>
+
+To backpropagate through this network, Your code thus needs to compute </br>
+![dAL](dAL.PNG) </br>
+To do so, use this formula, </br>
+``` python
+dAL = - (np.divide(Y, AL) - np.divide(1 - Y, 1 - AL)) # derivative of cost with respect to AL
+```
+</br>You can then use this post-activation gradient dAL to keep going backward. After that, you will have to use a for loop to iterate through all the other layers using the LINEAR->RELU backward function. You should store each dA, dW, and db in the grads dictionary.
+
+### 7. Update Parameters
+![Update Parameters](update_parameters.PNG) </br>
