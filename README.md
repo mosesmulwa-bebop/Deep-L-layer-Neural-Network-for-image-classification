@@ -69,7 +69,7 @@ c.[LINEAR -> RELU]  ×  (L-1) -> LINEAR -> SIGMOID backward (whole model) </br>
 When we implemented the L_model_forward function, at each iteration, we stored a cache which contains (X,W,b, and z). In the back propagation module, we'll use those variables to compute the gradients. Therefore, in the L_model_backward function, we'll iterate through all the hidden layers backward, starting from layer  𝐿 . On each step, we will use the cached values for layer  𝑙  to backpropagate through layer  𝑙 .</br>
 
 To backpropagate through this network, Your code thus needs to compute </br>
-![dAL](dAL.PNG) </br>
+![dAL](dAl.PNG) </br>
 To do so, use this formula, </br>
 ``` python
 dAL = - (np.divide(Y, AL) - np.divide(1 - Y, 1 - AL)) # derivative of cost with respect to AL
